@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_restaurant">
+
+    <fragment
+        android:id="@+id/navigation_restaurant"
+        android:name="ac.id.atmaluhur.mahasiswa_1811500029.ui.home.HomeFragment"
+        android:label="@string/title_restaurant"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_school"
+        android:name="ac.id.atmaluhur.mahasiswa_1811500029.ui.dashboard.DashboardFragment"
+        android:label="@string/title_school"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_hospital"
+        android:name="ac.id.atmaluhur.mahasiswa_1811500029.ui.notifications.NotificationsFragment"
+        android:label="@string/title_hospital"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
